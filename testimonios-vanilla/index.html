@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing de Testimonios</title>
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- HEADER -->
+    <header class="bg-white shadow">
+        <div class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+            <div class="flex items-center gap-2">
+                <img src="logo.png" alt="logo" class="h-10 w-auto">
+                <span class="font-bold text-xl">Mi Proyecto</span>
+            </div>
+
+            <nav>
+                <ul class="flex gap-6 font-medium">
+                    <li><a href="#" class="hover:text-blue-600">Inicio</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Blog</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="bg-white py-16">
+        <div class="max-w-6xl mx-auto text-center px-6">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Testimonios Reales</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Un pequeño playground para probar la UI y el embed del componente de testimonios.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTENEDOR DE TESTIMONIO -->
+    <main>
+        <div class="max-w-6xl mx-auto px-6 py-12">
+            <h2 class="text-2xl font-bold mb-6">Ejemplo de Testimonio Incrustado</h2>
+
+            <!-- Aquí se incrustará el testimonio desde el backend -->
+
+
+
+            
+<iframe
+    src="http://localhost:3002/api/v1/api/public/embed/content/f625a089-1e5b-429d-b4f1-1dec2a95f7e6?organizationId=c5962dca-7a36-42bc-80fc-79fc709993c4&width=600&theme=light&autoplay=false"
+    width="600px"
+    height="400px"
+    frameborder="0"
+    allowfullscreen
+    style="border: 1px solid #ccc;"
+></iframe>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-10 border-t mt-16">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                <img src="logo.png" alt="logo" class="h-8 w-auto">
+                <span class="font-bold text-lg">Mi Proyecto</span>
+            </div>
+
+            <ul class="flex gap-6 mb-4 md:mb-0">
+                <li><a href="#" class="hover:text-blue-600">Inicio</a></li>
+                <li><a href="#" class="hover:text-blue-600">Blog</a></li>
+                <li><a href="#" class="hover:text-blue-600">Contacto</a></li>
+            </ul>
+
+            <ul class="flex gap-4 text-xl">
+                <li><a href="#" class="hover:text-blue-600"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#" class="hover:text-blue-600"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" class="hover:text-blue-600"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
+<!-- 
+f625a089-1e5b-429d-b4f1-1dec2a95f7e6
+
+c5962dca-7a36-42bc-80fc-79fc709993c4
+C:\proyectos\backend
+
+C:\proyectos\demo
+-->
