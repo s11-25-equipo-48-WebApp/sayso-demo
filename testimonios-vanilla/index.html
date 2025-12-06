@@ -2,105 +2,171 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing de Testimonios</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing de Testimonios</title>
 
-    <!-- TailwindCSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 </head>
 
 <body class="bg-gray-100 text-gray-800">
 
-    <!-- HEADER -->
-    <header class="bg-white shadow">
-        <div class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
-            <div class="flex items-center gap-2">
-                <img src="logo.png" alt="logo" class="h-10 w-auto">
-                <span class="font-bold text-xl">Mi Proyecto</span>
+  <!-- HEADER -->
+  <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg">
+    <div class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+      <div class="flex items-center gap-2">
+        <!-- Reemplazar 'logo.png' con un CDN o un icono moderno si es posible -->
+        <i class="fas fa-graduation-cap text-3xl"></i> <!-- Icono moderno de educación -->
+        <span class="font-bold text-2xl">PlatziClone</span>
+      </div>
+
+      <nav class="hidden md:block">
+        <ul class="flex gap-6 font-medium text-lg">
+          <li><a href="#" class="hover:text-blue-200 transition duration-300">Inicio</a></li>
+          <li><a href="#cursos" class="hover:text-blue-200 transition duration-300">Cursos</a></li>
+          <li><a href="#testimonios" class="hover:text-blue-200 transition duration-300">Testimonios</a></li>
+          <li><button id="loginButton"
+              class="bg-white text-blue-600 px-4 py-2 rounded-full font-bold hover:bg-blue-100 transition duration-300">Iniciar
+              Sesión</button></li>
+        </ul>
+      </nav>
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="mobileMenuButton" class="text-white focus:outline-none" aria-label="Abrir menú móvil">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden bg-blue-700 pb-4">
+      <ul class="flex flex-col items-center gap-4 text-lg">
+        <li><a href="#" class="block px-3 py-2 hover:bg-blue-600 w-full text-center">Inicio</a></li>
+        <li><a href="#cursos" class="block px-3 py-2 hover:bg-blue-600 w-full text-center">Cursos</a></li>
+        <li><a href="#testimonios" class="block px-3 py-2 hover:bg-blue-600 w-full text-center">Testimonios</a></li>
+        <li><button id="mobileLoginButton"
+            class="bg-white text-blue-600 px-4 py-2 rounded-full font-bold hover:bg-blue-100 transition duration-300 w-40">Iniciar
+            Sesión</button></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-br from-blue-500 to-purple-500 text-white py-20 md:py-32">
+    <div class="max-w-6xl mx-auto text-center px-6">
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+        Aprende, Crece, Transforma: Tu Futuro Empieza Aquí
+      </h1>
+      <p class="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto mb-10">
+        Accede a miles de cursos y rutas de aprendizaje en tecnología, diseño, marketing y más. ¡Impulsa tu carrera hoy!
+      </p>
+      <a href="#cursos"
+        class="bg-yellow-400 text-blue-900 px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-yellow-300 transform hover:scale-105 transition duration-300 ease-in-out">
+        Explora Nuestros Cursos <i class="fas fa-arrow-right ml-2"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- CURSOS -->
+  <section id="cursos" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold text-gray-900 text-center mb-12">Nuestros Cursos Populares</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Curso Card 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="https://via.placeholder.com/400x250/FF5733/FFFFFF?text=Desarrollo+Web" alt="Curso Desarrollo Web"
+            class="w-full h-48 object-cover">
+          <div class="p-6">
+            <div class="flex items-center text-blue-600 mb-2">
+              <i class="fas fa-code text-xl mr-2"></i>
+              <h3 class="text-xl font-bold">Desarrollo Web con React</h3>
             </div>
-
-            <nav>
-                <ul class="flex gap-6 font-medium">
-                    <li><a href="#" class="hover:text-blue-600">Inicio</a></li>
-                    <li><a href="#" class="hover:text-blue-600">Blog</a></li>
-                    <li><a href="#" class="hover:text-blue-600">Contacto</a></li>
-                </ul>
-            </nav>
+            <p class="text-gray-600 text-base mb-4">Aprende a construir interfaces de usuario modernas y reactivas con
+              React y Tailwind CSS.</p>
+            <a href="#"
+              class="inline-block bg-blue-600 text-white px-5 py-2 rounded-full font-bold hover:bg-blue-700 transition duration-300">Ver
+              Curso</a>
+          </div>
         </div>
-    </header>
 
-    <!-- HERO -->
-    <section class="bg-white py-16">
-        <div class="max-w-6xl mx-auto text-center px-6">
-            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Testimonios Reales</h1>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                Un pequeño playground para probar la UI y el embed del componente de testimonios.
-            </p>
-        </div>
-    </section>
-
-    <!-- CONTENEDOR DE TESTIMONIO -->
-    <main>
-        <div class="max-w-6xl mx-auto px-6 py-12">
-            <h2 class="text-2xl font-bold mb-6">Ejemplo de Testimonio Incrustado</h2>
-
-            <!-- Aquí se incrustará el testimonio desde el backend -->
-
-
-
-            
-<iframe
-    src="http://localhost:3002/api/v1/api/public/embed/content/f625a089-1e5b-429d-b4f1-1dec2a95f7e6?organizationId=c5962dca-7a36-42bc-80fc-79fc709993c4&width=600&theme=light&autoplay=false"
-    width="600px"
-    height="400px"
-    frameborder="0"
-    allowfullscreen
-    style="border: 1px solid #ccc;"
-></iframe>
-
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="bg-white py-10 border-t mt-16">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-
-            <div class="flex items-center gap-2 mb-4 md:mb-0">
-                <img src="logo.png" alt="logo" class="h-8 w-auto">
-                <span class="font-bold text-lg">Mi Proyecto</span>
+        <!-- Curso Card 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="https://via.placeholder.com/400x250/33FF57/FFFFFF?text=Dise%C3%B1o+UX/UI" alt="Curso Diseño UX/UI"
+            class="w-full h-48 object-cover">
+          <div class="p-6">
+            <div class="flex items-center text-green-600 mb-2">
+              <i class="fas fa-paint-brush text-xl mr-2"></i>
+              <h3 class="text-xl font-bold">Diseño UX/UI Avanzado</h3>
             </div>
-
-            <ul class="flex gap-6 mb-4 md:mb-0">
-                <li><a href="#" class="hover:text-blue-600">Inicio</a></li>
-                <li><a href="#" class="hover:text-blue-600">Blog</a></li>
-                <li><a href="#" class="hover:text-blue-600">Contacto</a></li>
-            </ul>
-
-            <ul class="flex gap-4 text-xl">
-                <li><a href="#" class="hover:text-blue-600"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#" class="hover:text-blue-600"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#" class="hover:text-blue-600"><i class="fa-brands fa-twitter"></i></a></li>
-            </ul>
-
+            <p class="text-gray-600 text-base mb-4">Domina los principios del diseño de experiencia de usuario y crea
+              interfaces intuitivas.</p>
+            <a href="#"
+              class="inline-block bg-green-600 text-white px-5 py-2 rounded-full font-bold hover:bg-green-700 transition duration-300">Ver
+              Curso</a>
+          </div>
         </div>
-    </footer>
+
+        <!-- Curso Card 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="https://via.placeholder.com/400x250/3357FF/FFFFFF?text=Marketing+Digital"
+            alt="Curso Marketing Digital" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <div class="flex items-center text-purple-600 mb-2">
+              <i class="fas fa-bullhorn text-xl mr-2"></i>
+              <h3 class="text-xl font-bold">Estrategias de Marketing Digital</h3>
+            </div>
+            <p class="text-gray-600 text-base mb-4">Aprende a crear campañas de marketing digital exitosas y a aumentar
+              tu alcance online.</p>
+            <a href="#"
+              class="inline-block bg-purple-600 text-white px-5 py-2 rounded-full font-bold hover:bg-purple-700 transition duration-300">Ver
+              Curso</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section id="testimonios" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-extrabold text-gray-900 mb-12">Lo que Nuestros Alumnos Dicen</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Testimonio 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Testimonio Destacado 1</h3>
+          <iframe
+            src="http://localhost:3002/api/v1/api/public/embed/content/f625a089-1e5b-429d-b4f1-1dec2a95f7e6?organizationId=c5962dca-7a36-42bc-80fc-79fc709993c4&width=600&theme=light&autoplay=false"
+            width="600px" height="400px" frameborder="0" allowfullscreen style="border: 1px solid #ccc;"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white py-10 border-t mt-16">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <div class="flex items-center gap-2 mb-4 md:mb-0">
+        <i class="fas fa-graduation-cap text-3xl"></i>
+        <span class="font-bold text-lg">Mi Proyecto</span>
+      </div>
+
+      <ul class="flex gap-6 mb-4 md:mb-0">
+        <li><a href="#" class="hover:text-blue-600">Inicio</a></li>
+        <li><a href="#" class="hover:text-blue-600">Blog</a></li>
+        <li><a href="#" class="hover:text-blue-600">Contacto</a></li>
+      </ul>
+
+      <ul class="flex gap-4 text-2xl">
+        <li><a class="hover:text-blue-600" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a class="hover:text-blue-600" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a class="hover:text-blue-600" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 
 </html>
-
-
-<!-- 
-f625a089-1e5b-429d-b4f1-1dec2a95f7e6
-
-c5962dca-7a36-42bc-80fc-79fc709993c4
-C:\proyectos\backend
-
-C:\proyectos\demo
--->
