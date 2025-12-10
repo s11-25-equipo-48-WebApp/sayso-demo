@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Detalles de Curso Específico</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b6cee",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+                <div
+                    class="flex items-center justify-between whitespace-nowrap border-b border-slate-200 dark:border-slate-800 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto h-16">
+                    <div class="flex items-center gap-4">
+                        <div class="size-6 text-primary">
+                            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">
+                            Logo</h2>
+                    </div>
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+                            href="#plan-de-estudios">Plan de Estudios</a>
+                        <a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+                            href="#instructores">Instructores</a>
+                        <a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+                            href="#precio">Precio</a>
+                        <a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+                            href="#testimonios">Testimonios</a>
+                    </nav>
+                    <button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                        <span class="truncate">Inscribirse</span>
+                    </button>
+                </div>
+            </header>
+            <main class="flex-1">
+                <!-- Hero Section -->
+                <section class="py-16 sm:py-20 lg:py-24">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                            <div class="flex flex-col gap-6 text-center lg:text-left">
+                                <h1
+                                    class="text-slate-900 dark:text-white text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tighter">
+                                    Curso de Desarrollo Web Moderno
+                                </h1>
+                                <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-400">
+                                    Aprende a construir aplicaciones web rápidas y escalables con las tecnologías más
+                                    demandadas del mercado.
+                                </p>
+                                <div class="flex justify-center lg:justify-start">
+                                    <button
+                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                                        <span class="truncate">Inscríbete Ahora por $99</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                                    data-alt="Abstract gradient of blue and purple tones"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtkxNiUvzw7rr061-cNcHMfMZA17ck2ZfP4ScHnKxAwoCKJZ7OvywAv0KmdW7nMXcf0dZs-3F4Ftb7XzXki6WkYTfqDpccgl8MWpmHwblrLshQ25aVgJfLu0Q4cfQF8Quijvuxo6AGIbbtrElPSe3hLfqTp27TUrI1QSUWaVsiECJ7f3qkbRlp8hpdk-4k4l8rxGOn6QJu-IjPafTCEmWBbs8uYw4WhBOco8cBfIEm4E1sZuNP8USsXgnUuqrTwW0OJ1AjVhIYMB8");'>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                                    <div
+                                        class="flex flex-col gap-2 rounded-lg p-4 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50">
+                                        <p
+                                            class="text-slate-600 dark:text-slate-400 text-sm font-medium leading-normal">
+                                            Duración</p>
+                                        <p
+                                            class="text-slate-900 dark:text-white tracking-light text-xl font-bold leading-tight">
+                                            10 Semanas</p>
+                                    </div>
+                                    <div
+                                        class="flex flex-col gap-2 rounded-lg p-4 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50">
+                                        <p
+                                            class="text-slate-600 dark:text-slate-400 text-sm font-medium leading-normal">
+                                            Certificado</p>
+                                        <p
+                                            class="text-slate-900 dark:text-white tracking-light text-xl font-bold leading-tight">
+                                            Al finalizar</p>
+                                    </div>
+                                    <div
+                                        class="flex flex-col gap-2 rounded-lg p-4 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50">
+                                        <p
+                                            class="text-slate-600 dark:text-slate-400 text-sm font-medium leading-normal">
+                                            Nivel</p>
+                                        <p
+                                            class="text-slate-900 dark:text-white tracking-light text-xl font-bold leading-tight">
+                                            Principiante</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Course Description -->
+                <section class="py-16 sm:py-20 lg:py-24 bg-white dark:bg-slate-900">
+                    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div>
+                            <h2
+                                class="text-slate-900 dark:text-white text-3xl font-bold leading-tight tracking-tight mb-4">
+                                ¿Qué aprenderás?</h2>
+                            <ul class="space-y-3 text-slate-600 dark:text-slate-400">
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                    <span>Dominar HTML5, CSS3 y JavaScript moderno (ES6+).</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                    <span>Construir componentes interactivos con React y su ecosistema.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                    <span>Crear APIs robustas y seguras con Node.js y Express.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                    <span>Gestionar bases de datos NoSQL con MongoDB.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                    <span>Desplegar tus aplicaciones en la nube con servicios como Vercel o
+                                        Netlify.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2
+                                class="text-slate-900 dark:text-white text-3xl font-bold leading-tight tracking-tight mb-4">
+                                ¿A quién va dirigido?</h2>
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Este curso está diseñado para principiantes sin experiencia previa en programación, así
+                                como para diseñadores o profesionales de otras áreas que buscan dar un giro a su carrera
+                                y entrar en el mundo del desarrollo web.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Curriculum Section -->
+                <section class="py-16 sm:py-20 lg:py-24" id="plan-de-estudios">
+                    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2
+                            class="text-slate-900 dark:text-white text-center text-4xl font-bold leading-tight tracking-tight mb-12">
+                            Plan de Estudios Detallado</h2>
+                        <div class="space-y-4">
+                            <!-- Accordion Item 1 -->
+                            <details
+                                class="group rounded-lg bg-white dark:bg-slate-900 p-6 border border-slate-200 dark:border-slate-800"
+                                open="">
+                                <summary class="flex items-center justify-between cursor-pointer list-none">
+                                    <h3 class="text-lg font-semibold text-slate-800 dark:text-slate-200">Módulo 1:
+                                        Fundamentos de la Web</h3>
+                                    <span
+                                        class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                                </summary>
+                                <div class="mt-4 text-slate-600 dark:text-slate-400 space-y-2">
+                                    <p>Lección 1: Introducción a HTML</p>
+                                    <p>Lección 2: Estilizando con CSS</p>
+                                    <p>Lección 3: Fundamentos de JavaScript</p>
+                                </div>
+                            </details>
+                            <!-- Accordion Item 2 -->
+                            <details
+                                class="group rounded-lg bg-white dark:bg-slate-900 p-6 border border-slate-200 dark:border-slate-800">
+                                <summary class="flex items-center justify-between cursor-pointer list-none">
+                                    <h3 class="text-lg font-semibold text-slate-800 dark:text-slate-200">Módulo 2:
+                                        Desarrollo Frontend con React</h3>
+                                    <span
+                                        class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                                </summary>
+                                <div class="mt-4 text-slate-600 dark:text-slate-400 space-y-2">
+                                    <p>Lección 1: Componentes y JSX</p>
+                                    <p>Lección 2: Estado y Ciclo de Vida</p>
+                                    <p>Lección 3: Hooks y Context API</p>
+                                </div>
+                            </details>
+                            <!-- Accordion Item 3 -->
+                            <details
+                                class="group rounded-lg bg-white dark:bg-slate-900 p-6 border border-slate-200 dark:border-slate-800">
+                                <summary class="flex items-center justify-between cursor-pointer list-none">
+                                    <h3 class="text-lg font-semibold text-slate-800 dark:text-slate-200">Módulo 3:
+                                        Backend con Node.js y Express</h3>
+                                    <span
+                                        class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                                </summary>
+                                <div class="mt-4 text-slate-600 dark:text-slate-400 space-y-2">
+                                    <p>Lección 1: Creando un servidor</p>
+                                    <p>Lección 2: Rutas y Controladores</p>
+                                    <p>Lección 3: Middlewares</p>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </section>
+                <!-- Instructors Section -->
+                <section class="py-16 sm:py-20 lg:py-24 bg-white dark:bg-slate-900" id="instructores">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2
+                            class="text-slate-900 dark:text-white text-center text-4xl font-bold leading-tight tracking-tight mb-12">
+                            Conoce a tus Instructores</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- Instructor Card 1 -->
+                            <div
+                                class="flex flex-col items-center text-center p-8 rounded-xl border border-slate-200 dark:border-slate-800">
+                                <img class="w-32 h-32 rounded-full mb-4 object-cover"
+                                    data-alt="Portrait of instructor John Doe"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx353c4iAPC9DYQC8TgBHMxj2YhzPOxFLksL8SfF8C0Rrw7P89pMQ-Nls4U3-H28bE9vQ7r6g9Eg14jhXppSmd0z_TC9uGyEr-v5Oc5za_7RbPTSae9Kje2AZMUilbeBQOGxRnQ9SaWsCDnIVO4kmk_WTCPh5OxMauUlwaCIIgCVcvVv-LKfIOyRMXJqVw51ZUPcagRJ58waVBrlLZUYVue0ffaXacL8yF9wH0V4SMcjWyjRZtJ20MK5JdF5NocXjX_T96dhBIb4g" />
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">John Doe</h3>
+                                <p class="text-primary font-medium mb-2">Lead Frontend Developer</p>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm">John tiene más de 10 años de
+                                    experiencia construyendo interfaces de usuario para startups y grandes empresas
+                                    tecnológicas.</p>
+                            </div>
+                            <!-- Instructor Card 2 -->
+                            <div
+                                class="flex flex-col items-center text-center p-8 rounded-xl border border-slate-200 dark:border-slate-800">
+                                <img class="w-32 h-32 rounded-full mb-4 object-cover"
+                                    data-alt="Portrait of instructor Jane Smith"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZbkVTnpki-znJsuthT6khVUJN_8iliAVzgmqSK_O_H4oxUoNDO2t6D_D01ZtgdzXKUFiqlhVDOlk5U4r3RjpbJ2l3Mqw_orK4f61VdUPTs4Xxv5wUMwXcMQDDB7L4gl9n6GxctCFmPJ3dtKZZAthpzfbLIYf434dxYTfTn4EuGVhSA9_jO3COIkrwTqFV8oKrTkFl843ngTWQHrugz9kgbqZKINh-AR_GZG4G2Fg0pZuEoWFcnzawJqmVrsxTboRJHr_yOR5wlkk" />
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Jane Smith</h3>
+                                <p class="text-primary font-medium mb-2">Senior Backend Engineer</p>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm">Jane es una experta en
+                                    arquitecturas de microservicios y bases de datos, apasionada por el código limpio y
+                                    escalable.</p>
+                            </div>
+                            <!-- Instructor Card 3 -->
+                            <div
+                                class="flex flex-col items-center text-center p-8 rounded-xl border border-slate-200 dark:border-slate-800">
+                                <img class="w-32 h-32 rounded-full mb-4 object-cover"
+                                    data-alt="Portrait of instructor Alex Johnson"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUReeFWg8YLuDHAqjgCglf-QDEj_PNNZRVwbGPtSIO6t61C58xatc_pujDGOoO27smadFbyBYYDVbRrN2fKAVA7sNEk1eS5Dru-ATuqBqG9PSKZFaO_pQWfWZjGcB0scuuBnY3Xzdot7cOKadCBy9KXkDojpdeSz__ILDHfKx7JXAOtlqsT8p0QMd322NusDG01iLE6Rr8A8iqYLE0iaIBbEQJjCFhr6w4a5Jepwkv-gWSY9IGAz2IL6OTBJpEE-vg1x8_DiSQTeE" />
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Alex Johnson</h3>
+                                <p class="text-primary font-medium mb-2">DevOps &amp; Cloud Specialist</p>
+                                <p class="text-slate-600 dark:text-slate-400 text-sm">Alex se especializa en la
+                                    automatización y el despliegue de aplicaciones en la nube, garantizando rendimiento
+                                    y seguridad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Testimonials Section -->
+                <section class="py-16 sm:py-20 lg:py-24" id="testimonios">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2
+                            class="text-slate-900 dark:text-white text-center text-4xl font-bold leading-tight tracking-tight mb-12">
+                            Lo que dicen nuestros alumnos</h2>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                            <div class="aspect-video w-full">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/JsQ5ORGBB-E?si=i3QyNYpXIq-_JZxb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="space-y-8">
+                                <!-- Testimonial Card 1 -->
+                                <iframe
+                                            src="http://localhost:3002/api/v1/public/embed/content/368a0773-9bd9-4e23-a339-1ebeb840ae06?organizationId=ff1b87a3-4a20-4702-a506-0ced798bb9f5&width=600&height=400&theme=light&autoplay=false"
+                                            width="600" height="400" frameborder="0" allowfullscreen loading="lazy"
+                                            class="border border-gray-300 rounded-lg w-full max-w-full"></iframe>
+                                <!-- Testimonial Card 2 -->
+                                <iframe
+                                    src="http://localhost:3002/api/v1/public/embed/content/368a0773-9bd9-4e23-a339-1ebeb840ae06?organizationId=ff1b87a3-4a20-4702-a506-0ced798bb9f5&width=600&height=400&theme=light&autoplay=false"
+                                    width="600" height="400" frameborder="0" allowfullscreen loading="lazy"
+                                    class="border border-gray-300 rounded-lg w-full max-w-full"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Pricing Section -->
+                <section class="py-16 sm:py-20 lg:py-24 bg-white dark:bg-slate-900" id="precio">
+                    <div class="max-w-md mx-auto px-4 sm:px-6 lg:px-8">
+                        <div
+                            class="rounded-xl border border-primary/50 bg-primary/5 dark:bg-primary/10 p-8 text-center shadow-lg shadow-primary/10">
+                            <h2
+                                class="text-slate-900 dark:text-white text-4xl font-bold leading-tight tracking-tight mb-2">
+                                Únete al curso hoy</h2>
+                            <p class="text-slate-600 dark:text-slate-400 mb-6">Un único pago para transformar tu
+                                carrera.</p>
+                            <p class="text-6xl font-black text-slate-900 dark:text-white mb-6">$99</p>
+                            <ul class="space-y-3 text-slate-600 dark:text-slate-400 mb-8 text-left">
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">check</span>
+                                    <span>Acceso de por vida a todo el contenido.</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">check</span>
+                                    <span>Certificado de finalización.</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">check</span>
+                                    <span>Acceso a comunidad privada de alumnos.</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary">check</span>
+                                    <span>Soporte directo de los instructores.</span>
+                                </li>
+                            </ul>
+                            <button
+                                class="w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                                <span class="truncate">Inscríbete Ahora</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="bg-slate-100 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+                <div
+                    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-slate-500 dark:text-slate-400">
+                    <p>© 2024 Logo. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
